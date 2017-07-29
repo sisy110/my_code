@@ -8,15 +8,15 @@ int main(void)
 	printf("%u\n", -1);//4294967295 补码形式存储的  
 
 	printf("%d\n", 128);//128
-	printf("%hhd\n", 128);// 128 2个字节
-	printf("%hd\n", 128);//  128 1个字节
+	printf("%hhd\n", 128);// 128 输出8位 1个字节
+	printf("%hd\n", 128);//  128 输出16位 2个字节
 	printf("%hu\n", 128);//128
 
 	printf("\n");
 	char ch = 128;
 	printf("%d\n", ch);//-128
-	printf("%hhd\n", ch);//-128 2个字节
-	printf("%hd\n", ch);//-128  1个字节
+	printf("%hhd\n", ch);//-128 输出8位 1个字节
+	printf("%hd\n", ch);//-128  输出16位 2个字节
 	printf("%hu\n", ch);//65408
 	return 0;
 }
